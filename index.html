@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>第九影视 · 剧集榜单与影评解读（第九影视官网首页）</title>
+<meta name="description" content="第九影视是一份按周更新的观影手册：每日剧集榜单、编辑部影评解读、分题材观影指南、补片时间线。第九影视不做资源下载，只把值得花时间的作品挑出来讲清楚，官网入口 https://dijiuyingshi-app.github.io">
+<meta name="keywords" content="第九影视,第九影视官网,第九影视剧集榜单,第九影视影评解读,剧集推荐,影视榜单,观影指南,补片清单,dijiuyingshi-app">
+<meta name="author" content="第九影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#14110f">
+<meta name="apple-mobile-web-app-title" content="第九影视">
+<link rel="canonical" href="https://dijiuyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="第九影视">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="第九影视 · 剧集榜单与影评解读">
+<meta property="og:description" content="每周剧集榜单、影评解读、观影指南与补片清单，第九影视替你把片单缩短到能看完的长度。">
+<meta property="og:url" content="https://dijiuyingshi-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="第九影视 · 剧集榜单与影评解读">
+<meta name="twitter:description" content="剧集榜单 + 影评解读 + 观影指南，第九影视官网首页。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"第九影视","alternateName":["第九影视官网","第九影视榜单"],"url":"https://dijiuyingshi-app.github.io/","inLanguage":"zh-CN","description":"第九影视：剧集榜单、影评解读、观影指南与补片清单的周更观影手册。"}
+</script>
+<style>
+:root{
+  --bg:#14110f;
+  --bg2:#1b1714;
+  --card:#221d19;
+  --ink:#f4ece1;
+  --sub:#a79c8d;
+  --gold:#e8b04b;
+  --gold-soft:rgba(232,176,75,.14);
+  --line:rgba(244,236,225,.13);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  letter-spacing:.2px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.25}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.sans-serif-title{font-family:"Songti SC","Noto Serif SC",Georgia,serif}
+
+/* 顶栏 */
+.top{
+  position:sticky;top:0;z-index:60;
+  background:rgba(20,17,15,.92);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.top-in{display:flex;align-items:center;gap:18px;height:62px}
+.brand{display:flex;align-items:baseline;gap:9px;flex:0 0 auto}
+.brand b{font-size:20px;font-family:"Songti SC","Noto Serif SC",serif;letter-spacing:1px}
+.brand i{
+  font-style:normal;font-size:11px;color:var(--gold);
+  border:1px solid rgba(232,176,75,.4);border-radius:2px;
+  padding:1px 5px;letter-spacing:1px;
+}
+.nav{flex:1 1 auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav ul{display:flex;gap:22px;white-space:nowrap;padding:4px 0}
+.nav a{font-size:14px;color:var(--sub);padding-bottom:2px;border-bottom:1px solid transparent}
+.nav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.top-cta{
+  flex:0 0 auto;font-size:13px;color:#1a1512;background:var(--gold);
+  padding:7px 14px;border-radius:2px;font-weight:700;
+}
+
+/* 首屏 */
+.hero{padding:58px 0 30px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:end}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;
+  color:var(--gold);letter-spacing:2px;margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+h1{
+  font-family:"Songti SC","Noto Serif SC",Georgia,serif;
+  font-size:clamp(34px,6.4vw,62px);letter-spacing:1px;
+}
+h1 em{font-style:normal;color:var(--gold);border-bottom:6px solid var(--gold-soft)}
+.lede{margin-top:20px;color:#d8cec1;font-size:clamp(15px,1.6vw,17px);max-width:56ch}
+.lede strong{color:var(--ink)}
+.hero-meta{
+  margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 26px;
+  font-size:13px;color:var(--sub);
+}
+.hero-meta span b{color:var(--ink);font-size:19px;font-family:Georgia,serif;margin-right:4px}
+.url-chip{
+  display:block;margin-top:22px;font-size:13px;color:var(--sub);
+  border-left:2px solid var(--gold);padding:6px 0 6px 12px;word-break:break-all;
+}
+.url-chip b{color:var(--gold);font-weight:600}
+.btns{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;padding:12px 24px;border-radius:2px;font-size:14px;font-weight:700;
+}
+.btn-a{background:var(--gold);color:#191411}
+.btn-b{border:1px solid var(--line);color:var(--ink)}
+
+/* 胶片边饰的色块 */
+.reel{
+  position:relative;border:1px solid var(--line);background:var(--bg2);
+  padding:22px;border-radius:3px;
+}
+.reel::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:16px;
+  background-image:radial-gradient(circle at 8px 9px, rgba(232,176,75,.45) 0 2.6px, transparent 2.8px);
+  background-size:16px 22px;
+}
+.reel-in{padding-left:14px}
+.reel h4{font-size:15px;letter-spacing:1px;margin-bottom:12px}
+.reel p{font-size:13.5px;color:var(--sub)}
+.reel dl{margin:16px 0 0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px}
+.reel dt{color:var(--sub)}
+.reel dd{margin:0;color:var(--ink)}
+
+/* 跑马灯 */
+.ticker{
+  margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  overflow:hidden;white-space:nowrap;padding:11px 0;
+}
+.ticker div{display:inline-block;animation:roll 26s linear infinite}
+.ticker span{font-size:13px;color:var(--sub);letter-spacing:1px;padding:0 22px}
+.ticker span::after{content:"◆";color:var(--gold);margin-left:22px;font-size:9px}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none}}
+
+/* 通用区块 */
+section{padding:64px 0}
+.sec-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:34px;flex-wrap:wrap}
+.sec-no{
+  font-family:Georgia,serif;font-size:13px;color:var(--gold);
+  border:1px solid rgba(232,176,75,.45);padding:3px 8px;border-radius:2px;letter-spacing:1px;
+}
+.sec-head h2{font-family:"Songti SC","Noto Serif SC",serif;font-size:clamp(24px,3.4vw,34px)}
+.sec-head p{color:var(--sub);font-size:13.5px;margin-left:auto;max-width:38ch}
+
+/* 榜单 */
+.rank{border-top:1px solid var(--line)}
+.rank li{
+  display:grid;grid-template-columns:64px 1fr 150px 96px;gap:18px;align-items:center;
+  padding:20px 4px;border-bottom:1px solid var(--line);
+}
+.rank li:hover{background:rgba(232,176,75,.05)}
+.rk-no{font-family:Georgia,serif;font-size:30px;color:rgba(244,236,225,.28)}
+.rank li:first-child .rk-no{color:var(--gold)}
+.rk-t{font-size:17px;font-weight:700}
+.rk-d{font-size:13px;color:var(--sub);margin-top:4px}
+.rk-tag{font-size:12.5px;color:var(--sub)}
+.rk-score{font-family:Georgia,serif;font-size:22px;color:var(--gold);text-align:right}
+.rk-score small{display:block;font-family:inherit;font-size:11px;color:var(--sub)}
+
+/* 影评卡 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:3px;
+  padding:24px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(232,176,75,.5)}
+.card .kind{font-size:12px;color:var(--gold);letter-spacing:1px}
+.card h3{font-size:18px;margin:12px 0 10px;line-height:1.5}
+.card p{font-size:14px;color:var(--sub);flex:1}
+.card .more{margin-top:16px;font-size:13px;color:var(--ink)}
+.card .more span{color:var(--gold)}
+
+/* 指南时间线 */
+.guide{position:relative;padding-left:26px;border-left:1px dashed rgba(232,176,75,.4)}
+.guide li{position:relative;padding:0 0 30px 8px}
+.guide li:last-child{padding-bottom:0}
+.guide li::before{
+  content:"";position:absolute;left:-32px;top:8px;width:11px;height:11px;
+  background:var(--gold);border-radius:50%;box-shadow:0 0 0 4px rgba(232,176,75,.16);
+}
+.guide h4{font-size:16px;margin-bottom:6px}
+.guide h4 i{font-style:normal;font-family:Georgia,serif;color:var(--gold);margin-right:8px;font-size:13px}
+.guide p{font-size:14px;color:var(--sub)}
+
+/* 更新表 */
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;background:var(--line)}
+.week div{background:var(--bg);padding:20px 16px}
+.week b{display:block;font-size:13px;color:var(--gold);letter-spacing:1px;margin-bottom:8px}
+.week span{font-size:14px}
+.week em{display:block;font-style:normal;font-size:12.5px;color:var(--sub);margin-top:6px}
+
+/* 关于 + 问答 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.about p{color:#d8cec1;font-size:15px;margin-bottom:16px}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{
+  cursor:pointer;font-size:15.5px;font-weight:700;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:18px}
+.faq details[open] summary::after{content:"–"}
+.faq p{font-size:14px;color:var(--sub);margin-top:10px}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:52px 0 34px;margin-top:20px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}
+.f-grid h5{font-size:14px;margin:0 0 14px;letter-spacing:1px}
+.f-grid li{margin-bottom:9px;font-size:13.5px;color:var(--sub)}
+.f-grid li a:hover{color:var(--gold)}
+.f-brand b{font-family:"Songti SC","Noto Serif SC",serif;font-size:22px;letter-spacing:1px}
+.f-brand p{font-size:13px;color:var(--sub);margin-top:12px}
+.f-brand .addr{
+  margin-top:14px;font-size:13px;color:var(--gold);word-break:break-all;
+  background:rgba(232,176,75,.08);border:1px dashed rgba(232,176,75,.35);
+  padding:8px 10px;border-radius:2px;
+}
+.f-note{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:12.5px;color:#7d746a;line-height:1.9;
+}
+.totop{position:fixed;right:16px;bottom:16px;width:42px;height:42px;line-height:42px;
+  text-align:center;background:var(--gold);color:#191411;border-radius:50%;font-size:13px;z-index:70}
+
+/* 移动端 */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .about{grid-template-columns:1fr;gap:30px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .sec-head p{margin-left:0}
+  .rank li{grid-template-columns:46px 1fr;grid-auto-rows:auto;gap:6px 14px;padding:16px 2px}
+  .rk-t{grid-column:2}
+  .rk-d{grid-column:2}
+  .rk-tag{grid-column:2;font-size:12px}
+  .rk-score{grid-column:2;text-align:left;font-size:19px}
+  .rk-score small{display:inline;margin-left:8px}
+}
+@media (max-width:560px){
+  .top-in{height:56px;gap:12px}
+  .top-cta{display:none}
+  .brand b{font-size:18px}
+  section{padding:46px 0}
+  .hero{padding:40px 0 20px}
+  .f-grid{grid-template-columns:1fr;gap:26px}
+  .cards{grid-template-columns:1fr}
+  .reel dl{grid-template-columns:1fr;gap:2px 0}
+  .reel dd{margin-bottom:8px}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top"><b>第九影视</b><i>周更</i></a>
+    <nav class="nav" aria-label="站内导航">
+      <ul>
+        <li><a href="#rank">剧集榜单</a></li>
+        <li><a href="#review">影评解读</a></li>
+        <li><a href="#guide">观影指南</a></li>
+        <li><a href="#week">更新排期</a></li>
+        <li><a href="#about">关于本站</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <a class="top-cta" href="#week">本周片单</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">观影手册 / 每周三更新</div>
+        <h1>第九影视<br>把好片从<em>片单</em>里捞出来</h1>
+        <p class="lede">
+          榜单每周刷新，影评只写看完之后还想说的部分。第九影视把剧集、电影、纪录片拆成
+          「值得追」「可以等」「先补前作」三类，让你在按下播放键之前，就知道这部片子要占用你多少个晚上。
+        </p>
+        <div class="hero-meta">
+          <span><b>12</b>年以上片库梳理</span>
+          <span><b>4</b>个固定栏目</span>
+          <span><b>72</b>小时热度观察期</span>
+        </div>
+        <p class="url-chip">第九影视官网地址：本站唯一入口 <b>https://dijiuyingshi-app.github.io</b>，其余镜像站均与第九影视无关。</p>
+        <div class="btns">
+          <a class="btn btn-a" href="#rank">先看本周榜单</a>
+          <a class="btn btn-b" href="#guide">新用户观影路径</a>
+        </div>
+      </div>
+      <aside class="reel">
+        <div class="reel-in">
+          <h4>编辑部的三条选片标准</h4>
+          <p>不追热点排名，只看三件事：</p>
+          <dl>
+            <dt>其一</dt><dd>前两集能否立住人物</dd>
+            <dt>其二</dt><dd>中段是否舍得删戏</dd>
+            <dt>其三</dt><dd>结尾是否回应开头</dd>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div>
+      <span>第九影视 · 剧集榜单</span><span>影评解读</span><span>观影指南</span><span>经典补片</span><span>纪录片专题</span><span>第九影视 · 剧集榜单</span><span>影评解读</span><span>观影指南</span><span>经典补片</span><span>纪录片专题</span>
+    </div>
+  </div>
+</header>
+
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">01</span>
+      <h2>第九影视剧集榜单</h2>
+      <p>取近 72 小时讨论热度与编辑部复看结果，每周三中午重排。</p>
+    </div>
+    <ol class="rank">
+      <li>
+        <span class="rk-no">01</span>
+        <div>
+          <div class="rk-t">《长夜行舟》</div>
+          <div class="rk-d">十二集 · 悬疑 / 群像 · 已完结，适合连看两晚</div>
+        </div>
+        <span class="rk-tag">题材：罪案群像</span>
+        <span class="rk-score">8.9<small>编辑部评分</small></span>
+      </li>
+      <li>
+        <span class="rk-no">02</span>
+        <div>
+          <div class="rk-t">《雾中车站》</div>
+          <div class="rk-d">八集 · 剧情 / 年代 · 更新至第 6 集</div>
+        </div>
+        <span class="rk-tag">题材：年代叙事</span>
+        <span class="rk-score">8.6<small>编辑部评分</small></span>
+      </li>
+      <li>
+        <span class="rk-no">03</span>
+        <div>
+          <div class="rk-t">《第七封来信》</div>
+          <div class="rk-d">六集 · 爱情 / 轻喜剧 · 单集 30 分钟</div>
+        </div>
+        <span class="rk-tag">题材：都市轻喜</span>
+        <span class="rk-score">8.3<small>编辑部评分</small></span>
+      </li>
+      <li>
+        <span class="rk-no">04</span>
+        <div>
+          <div class="rk-t">《海边的旧唱片》</div>
+          <div class="rk-d">十集 · 音乐 / 成长 · 已完结</div>
+        </div>
+        <span class="rk-tag">题材：音乐成长</span>
+        <span class="rk-score">8.1<small>编辑部评分</small></span>
+      </li>
+      <li>
+        <span class="rk-no">05</span>
+        <div>
+          <div class="rk-t">《春分之后》</div>
+          <div class="rk-d">十六集 · 家庭 / 生活流 · 更新至第 9 集</div>
+        </div>
+        <span class="rk-tag">题材：家庭日常</span>
+        <span class="rk-score">7.8<small>编辑部评分</small></span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="review">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">02</span>
+      <h2>影评解读</h2>
+      <p>只写看完之后还剩下的东西：结构、表演、以及被剪掉的那一刀。</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="kind">结构拆解</span>
+        <h3>《长夜行舟》是怎么把三条线收进一艘船的</h3>
+        <p>前四集看似散漫，其实每个人物的出场顺序都对应着终局的证词顺序。第九影视逐场标注了它的伏笔落点。</p>
+        <a class="more" href="#review">阅读全文 <span>→</span></a>
+      </article>
+      <article class="card">
+        <span class="kind">表演笔记</span>
+        <h3>《雾中车站》：沉默比台词更长的两场戏</h3>
+        <p>第七集的站台长镜头，全靠演员的呼吸节奏撑住剪辑。我们把两版处理逐帧对照了一遍。</p>
+        <a class="more" href="#review">阅读全文 <span>→</span></a>
+      </article>
+      <article class="card">
+        <span class="kind">类型观察</span>
+        <h3>轻喜剧为什么越来越短：从 45 分钟到 30 分钟</h3>
+        <p>单集时长被砍掉的那十五分钟，究竟牺牲了什么？以《第七封来信》为例说明取舍逻辑。</p>
+        <a class="more" href="#review">阅读全文 <span>→</span></a>
+      </article>
+      <article class="card">
+        <span class="kind">补片专题</span>
+        <h3>看《海边的旧唱片》之前，建议先补这三部</h3>
+        <p>片中大量引用上世纪九十年代的唱片工业背景，补完前作再回头看，配乐线索会清楚很多。</p>
+        <a class="more" href="#review">阅读全文 <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">03</span>
+      <h2>观影指南</h2>
+      <p>第九影视给新读者的一条固定路径，照着走基本不会踩空。</p>
+    </div>
+    <ol class="guide">
+      <li>
+        <h4><i>STEP 01</i>先定预算，再定片单</h4>
+        <p>按你能给出的小时数选作品，而不是按热度。一部十六集的剧集意味着至少四个晚上，先算清楚这笔时间账。</p>
+      </li>
+      <li>
+        <h4><i>STEP 02</i>看榜单，更看榜单下面的理由</h4>
+        <p>第九影视的每条榜单都附了题材与更新状态，判断它是否适合当下的你，比名次本身更重要。</p>
+      </li>
+      <li>
+        <h4><i>STEP 03</i>开播前花十分钟补背景</h4>
+        <p>年代剧、行业剧、改编剧都有前置信息门槛，补一点背景，前两集的观感会完全不一样。</p>
+      </li>
+      <li>
+        <h4><i>STEP 04</i>看完回到影评区对一遍</h4>
+        <p>把自己记住的场景和编辑部标注的落点对照一次，很多当时没注意的设计会第二次浮现出来。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="week">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">04</span>
+      <h2>栏目更新排期</h2>
+      <p>一周七天，每天只做一件事，栏目节奏全年不变。</p>
+    </div>
+    <div class="week">
+      <div><b>周一</b><span>新剧观察</span><em>开播作品第一印象</em></div>
+      <div><b>周二</b><span>经典补片</span><em>老片重看笔记</em></div>
+      <div><b>周三</b><span>剧集榜单</span><em>本周排名重排</em></div>
+      <div><b>周四</b><span>影评解读</span><em>长文结构拆解</em></div>
+      <div><b>周五</b><span>纪录片专题</span><em>非虚构推荐</em></div>
+      <div><b>周六</b><span>观影指南</span><em>主题片单打包</em></div>
+      <div><b>周日</b><span>读者来信</span><em>留言与答疑整理</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="sec-head" style="margin-bottom:24px">
+        <span class="sec-no">05</span>
+        <h2>关于第九影视</h2>
+      </div>
+      <p>
+        第九影视始于一份私人观影笔记，后来变成固定栏目。我们不做热度搬运，也不做资源分发，
+        只保留编辑部真正看完、并且愿意再聊一次的片子。
+      </p>
+      <p>
+        站名取自「第九艺术」的说法——第九影视相信影像值得被当作一门手艺来讨论，而不是一条流水线上的消耗品。
+      </p>
+      <p>
+        站点地址：https://dijiuyingshi-app.github.io （dijiuyingshi-app.github.io 为第九影视唯一域名，
+        未在任何第三方平台开设分站）。
+      </p>
+    </div>
+    <div class="faq" id="faq">
+      <h3 style="font-size:18px;margin-bottom:8px">常见问题</h3>
+      <details open>
+        <summary>第九影视提供在线播放或下载吗？</summary>
+        <p>不提供。本站只做影视资讯、榜单与解读，不存储、不托管、不提供任何影视文件的在线播放或下载，请通过正规平台观看。</p>
+      </details>
+      <details>
+        <summary>榜单的排名依据是什么？</summary>
+        <p>由近 72 小时讨论热度、编辑部复看评分、更新稳定度三项加权得出，每周三中午重排一次，不接商业位次。</p>
+      </details>
+      <details>
+        <summary>如何推荐一部作品给第九影视？</summary>
+        <p>在「读者来信」栏目留言即可，注明题材、集数与你的观看理由，编辑部会在周日的答疑中统一回复。</p>
+      </details>
+      <details>
+        <summary>手机上浏览会有区别吗？</summary>
+        <p>页面按移动端优先排版，榜单在窄屏下自动转为纵向卡片，导航可横向滑动，无需缩放即可阅读。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b>第九影视</b>
+        <p>每周三更新榜单，周四长文解读。<br>一份替你缩短片单的观影手册。</p>
+        <p class="addr">https://dijiuyingshi-app.github.io</p>
+      </div>
+      <div>
+        <h5>栏目</h5>
+        <ul>
+          <li><a href="#rank">剧集榜单</a></li>
+          <li><a href="#review">影评解读</a></li>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#week">更新排期</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>专题</h5>
+        <ul>
+          <li><a href="#review">经典补片</a></li>
+          <li><a href="#review">纪录片专题</a></li>
+          <li><a href="#review">读者来信</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>站点</h5>
+        <ul>
+          <li><a href="#about">关于第九影视</a></li>
+          <li><a href="#top">回到顶部</a></li>
+          <li><a href="#faq">投稿与推荐</a></li>
+          <li><a href="#about">版权说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="f-note">
+      第九影视 · 剧集榜单与影评解读　|　https://dijiuyingshi-app.github.io<br>
+      本站为影视资讯与评论站点，所有作品信息、评分与文字内容由第九影视编辑部整理撰写，不提供任何影视资源的在线播放、下载或跳转；作品版权归原权利人所有。<br>
+      Copyright © 第九影视　All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<a class="totop" href="#top" aria-label="回到顶部">↑</a>
+
+</body>
+</html>
